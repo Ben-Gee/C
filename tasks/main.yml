@@ -1,0 +1,9 @@
+---
+- name: Set default composer-install_bin if is undefined
+  set_fact:
+    composer_executable: composer
+  when: composer_install_executable is not defined
+
+- name: Perform composer install
+  command: >
+    {{ composer_install_executable }} install -d {{ composer_install_project_path }}

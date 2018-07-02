@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Benjamin Gröner
+  description: Small role that performs a composer install
+  company: CONQOON
+
+  license: MIT
+
+  min_ansible_version: 2.0
+
+  galaxy_tags:
+  - Composer
+  - Install
+
+dependencies: []
